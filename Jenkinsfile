@@ -55,7 +55,10 @@ pipeline {
       when {
         branch 'development'
       }
-      
+      steps
+{
+echo "thats fine"
+}
       post {
         success {
           emailext(
